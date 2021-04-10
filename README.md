@@ -47,7 +47,7 @@
    
    
    
-   ### Instruction regrading  load checkpoint
+## Instruction regrading  load checkpoint
    
    def load_checkpoint(model, save_folder, model_name,epoch,opt,device ,best_model=False)
    
