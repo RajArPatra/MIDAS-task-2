@@ -16,7 +16,9 @@
 * For the summary of the results are in Results_Summary.ipynb
 
 ### Instruction regrading run functions
- 
+  
+  These functions are widely used in above notebooks.
+  
  * def run(model,criterion,optimizer,scheduler,load_dir,load_model,load_epch=0,N_EPOCHS=20,save_fq=5,load=False,ch=3):
  * def run_pre(model,criterion,optimizer,scheduler,load_dir,load_model,load_epch=0,N_EPOCHS=20,save_fq=5,load=False,ch=3):
  * def run_train(model,criterion,optimizer,scheduler,load_dir,load_model,load_epch=0,N_EPOCHS=20,save_fq=5,load=False):
@@ -48,6 +50,8 @@
 
 
 ## Instruction regrading  load checkpoint
+   
+   Function to load the saved Checkpoint
    
    def load_checkpoint(model, save_folder, model_name,epoch,opt,device ,best_model=False)
    
