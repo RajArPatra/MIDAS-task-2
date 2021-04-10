@@ -21,32 +21,32 @@
  * def run_pre(model,criterion,optimizer,scheduler,load_dir,load_model,load_epch=0,N_EPOCHS=20,save_fq=5,load=False,ch=3):
  * def run_train(model,criterion,optimizer,scheduler,load_dir,load_model,load_epch=0,N_EPOCHS=20,save_fq=5,load=False):
  
-   *Parameters*:
+ *Parameters*:
    
-   model- pytorch based deep learning model object
-   
-   criterion- loss function
-   
-   optimizer- optimizer object
-   
-   scheduler- scheduler object
-   
-   load_dir- path for the load root where the model would be saved/loaded
-   
-   load_model- name of subdirectory where the model would be saved/loaded
-   
-   load_epoch- epoch number when model checkpoint is pre-loaded
-   
-   N_EPOCHS- number of epochs to be trained and evaluated in the current run
-   
-   save_fs- save frequency of the model checkpoint while training
-   
-   load- if True load pre saved checkpoint , if False train from scratch.
-   
-   ch- The number of channels of image in the dataset for training and evaluated
-   
-   
-   
+    model- pytorch based deep learning model object
+
+    criterion- loss function
+
+    optimizer- optimizer object
+
+    scheduler- scheduler object
+
+    load_dir- path for the load root where the model would be saved/loaded
+
+    load_model- name of subdirectory where the model would be saved/loaded
+
+    load_epoch- epoch number when model checkpoint is pre-loaded
+
+    N_EPOCHS- number of epochs to be trained and evaluated in the current run
+
+    save_fs- save frequency of the model checkpoint while training
+
+    load- if True load pre saved checkpoint , if False train from scratch.
+
+    ch- The number of channels of image in the dataset for training and evaluated
+
+
+
 ## Instruction regrading  load checkpoint
    
    def load_checkpoint(model, save_folder, model_name,epoch,opt,device ,best_model=False)
@@ -68,16 +68,16 @@
     best_model- if True loads best model
     
    *Return*:
-   
-   model, opt, epoch, time1
-   
-   model- loaded model
-   
-   opt- optimizer with upadted parameters from chckpoint
-    
-   epoch- last trained epoch
-   
-   time1- time taken till training the checkpoint.
+
+    model, opt, epoch, time1
+
+    model- loaded model
+
+    opt- optimizer with upadted parameters from chckpoint
+
+    epoch- last trained epoch
+
+    time1- time taken till training the checkpoint.
    
    
    *All the checkpoints are  present in the link*- [here](https://drive.google.com/drive/folders/1Hppdc1RmkHPDJUg1V5OYASSe-JHe1lYs?usp=sharing)
